@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://DMWoodall.github.com/atom.xml" rel="self"/>
   <link href="http://DMWoodall.github.com/"/>
-  <updated>2012-06-10T12:31:39-05:00</updated>
+  <updated>2012-06-11T10:31:59-05:00</updated>
   <id>http://DMWoodall.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[learning Octopress]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/10/learning-octopress/"/>
+    <updated>2012-06-10T12:51:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/10/learning-octopress</id>
+    <content type="html"><![CDATA[<p>There are three primary commands once you are blogging;</p>
+
+<ol>
+<li><p>rake new_post[&#8220;this is the title of the post&#8221;]</p></li>
+<li><p>rake generate</p></li>
+<li><p>git push origin source</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[hello moon]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/10/hello-moon/"/>
+    <updated>2012-06-10T12:42:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/10/hello-moon</id>
+    <content type="html"><![CDATA[<p>My &#8220;hello world&#8221; didn&#8217;t take so I&#8217;m talking to the moon now.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[hello world]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/10/hello-world/"/>
+    <updated>2012-06-10T12:37:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/10/hello-world</id>
+    <content type="html"><![CDATA[<p>If this deploys, I&#8217;m going to wonder what I did wrong all those times before&#8230;</p>
+]]></content>
+  </entry>
   
 </feed>
