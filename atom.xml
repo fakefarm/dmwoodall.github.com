@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[The Internet is here to stay.]]></title>
   <link href="http://DMWoodall.github.com/atom.xml" rel="self"/>
   <link href="http://DMWoodall.github.com/"/>
-  <updated>2012-06-11T10:47:25-05:00</updated>
+  <updated>2012-06-11T11:03:25-05:00</updated>
   <id>http://DMWoodall.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Dav Woodall]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[learning Octopress]]></title>
-    <link href="http://DMWoodall.github.com/blog/2012/06/10/learning-octopress/"/>
-    <updated>2012-06-10T12:51:00-05:00</updated>
-    <id>http://DMWoodall.github.com/blog/2012/06/10/learning-octopress</id>
-    <content type="html"><![CDATA[<p>I had some trouble getting Octopress to launch, so I feel it&#8217;s appropriate to write a little bit about how I got it to load.There are three primary commands once you are blogging;</p>
+    <title type="html"><![CDATA[Finally on the Octopress]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress/"/>
+    <updated>2012-06-11T10:59:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress</id>
+    <content type="html"><![CDATA[<p>Man, you would think I could follow some instructions and easily get on here. After roughly 5 attempts, I&#8217;m finally able to post!</p>
+
+<p>I had some trouble getting Octopress to launch, so I feel it&#8217;s appropriate to write a little bit about how I got it to load.There are three primary commands once you are blogging;</p>
 
 <ol>
 <li><p>rake new_post[&#8220;this is the title of the post&#8221;]</p></li>
