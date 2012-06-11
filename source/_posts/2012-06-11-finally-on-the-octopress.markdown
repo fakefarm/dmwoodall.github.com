@@ -6,14 +6,35 @@ comments: true
 categories: octopress
 ---
 
-Man, you would think I could follow some instructions and easily get on here. After roughly 5 attempts, I'm finally able to post!
+I'm finally able to post on Octopress! Woohoo!
 
-I had some trouble getting Octopress to launch, so I feel it's appropriate to write a little bit about how I got it to load.There are three primary commands once you are blogging;
+The directions to create the site were pretty straight forward, but I had some trouble getting Octopress to catch my blog post.
 
-1. rake new_post["this is the title of the post"]
+<hr>
 
-2. rake generate
+### Step 1
+{% codeblock lang:rb %}
+rake new_post["this is the title of the post"]
+{% endcodeblock %}
 
-3. rake deploy
+This creates the new post.
 
-4. git push origin source
+### Step 2
+{% codeblock lang:rb %}
+git add .
+git commit -m 'your message here.'
+git push origin source # make sure you add 'origin source' or it will yell at you.
+{% endcodeblock %}
+The weird thing is that you won't see any changes to your github repo. (Until after step 4)
+
+### Step 3
+{% codeblock lang:rb %}
+rake generate
+{% endcodeblock %}
+This step creates the html blog doing some kind of github pages magic behind the scenes.
+
+### Step 4
+{% codeblock lang:rb %}
+rake deploy
+{% endcodeblock %}
+This actually sends the files to github, and to your blog address.
