@@ -2,14 +2,22 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress/</loc>
-        <lastmod>2012-06-11T11:02:39-05:00</lastmod>
+        <lastmod>2012-06-11T11:25:47-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block/</loc>
+        <lastmod>2012-06-11T11:28:19-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://DMWoodall.github.com/blog/2012/06/11/adding-images/</loc>
+        <lastmod>2012-06-11T11:43:04-05:00</lastmod>
     </url>
     <url>
         <loc>http://DMWoodall.github.com/blog/archives/</loc>
-        <lastmod>2012-06-11T11:02:39-05:00</lastmod>
+        <lastmod>2012-06-11T11:43:04-05:00</lastmod>
     </url>
     <url>
         <loc>http://DMWoodall.github.com/</loc>
-        <lastmod>2012-06-11T11:02:39-05:00</lastmod>
+        <lastmod>2012-06-11T11:43:04-05:00</lastmod>
     </url>
 </urlset>

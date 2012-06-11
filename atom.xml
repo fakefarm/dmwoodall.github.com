@@ -4,7 +4,7 @@
   <title><![CDATA[The Internet is here to stay.]]></title>
   <link href="http://DMWoodall.github.com/atom.xml" rel="self"/>
   <link href="http://DMWoodall.github.com/"/>
-  <updated>2012-06-11T11:15:33-05:00</updated>
+  <updated>2012-06-11T11:44:32-05:00</updated>
   <id>http://DMWoodall.github.com/</id>
   <author>
     <name><![CDATA[Dave Woodall]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[adding images]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/11/adding-images/"/>
+    <updated>2012-06-11T11:31:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/11/adding-images</id>
+    <content type="html"><![CDATA[<p><img class="[class names]" src="https://lh4.googleusercontent.com/-IanhqBRh-MQ/T9YfJwQ-uKI/AAAAAAAAADg/gLC6K0dUibQ/s800/personal_logo.jpg" title="[width] [height] [title text [alt text]]" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[adding a code block]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block/"/>
+    <updated>2012-06-11T11:20:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block</id>
+    <content type="html"><![CDATA[<p>I was reading the <a href="" title="http://octopress.org/docs/plugins/codeblock/">Octopress Documentation</a> about code blocks and decided to try it here;</p>
+
+<figure class='code'><figcaption><span>working on this technical blog </span><a href='http://app/controllers/application_controller.rb'>Example application controller </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">ActionController</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="n">protect_from_forgery</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Finally on the Octopress]]></title>

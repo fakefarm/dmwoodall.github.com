@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | The Internet is here to stay.]]></title>
+  <link href="http://DMWoodall.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://DMWoodall.github.com/"/>
+  <updated>2012-06-11T11:44:32-05:00</updated>
+  <id>http://DMWoodall.github.com/</id>
+  <author>
+    <name><![CDATA[Dave Woodall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[adding a code block]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block/"/>
+    <updated>2012-06-11T11:20:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block</id>
+    <content type="html"><![CDATA[<p>I was reading the <a href="" title="http://octopress.org/docs/plugins/codeblock/">Octopress Documentation</a> about code blocks and decided to try it here;</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>working on this technical blog </span><a href='http://app/controllers/application_controller.rb'>Example application controller </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;class ApplicationController &amp;lt; ActionController::Base</span>
+</span><span class='line'><span class="sr">  protect_from_forgery</span>
+</span><span class='line'><span class="sr">end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Finally on the Octopress]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress/"/>
+    <updated>2012-06-11T10:59:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress</id>
+    <content type="html"><![CDATA[<p>Man, you would think I could follow some instructions and easily get on here. After roughly 5 attempts, I'm finally able to post!</p>
+
+<p>I had some trouble getting Octopress to launch, so I feel it's appropriate to write a little bit about how I got it to load.There are three primary commands once you are blogging;</p>
+
+<ol>
+<li><p>rake new_post["this is the title of the post"]</p></li>
+<li><p>rake generate</p></li>
+<li><p>rake deploy</p></li>
+<li><p>git push origin source</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
