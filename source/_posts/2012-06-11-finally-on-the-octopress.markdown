@@ -3,7 +3,7 @@ layout: post
 title: "Finally on the Octopress"
 date: 2012-06-11 10:59
 comments: true
-categories: 
+categories: octopress
 ---
 
 Man, you would think I could follow some instructions and easily get on here. After roughly 5 attempts, I'm finally able to post!
