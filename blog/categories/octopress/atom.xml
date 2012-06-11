@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | The Internet is here to stay.]]></title>
   <link href="http://DMWoodall.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://DMWoodall.github.com/"/>
-  <updated>2012-06-11T11:44:32-05:00</updated>
+  <updated>2012-06-11T11:57:55-05:00</updated>
   <id>http://DMWoodall.github.com/</id>
   <author>
     <name><![CDATA[Dave Woodall]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[adding images]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/11/adding-images/"/>
+    <updated>2012-06-11T11:31:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/11/adding-images</id>
+    <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/dmwoodall/7362212346/" title="personal_logo by Dave Woodall, on Flickr"><img src="http://farm9.staticflickr.com/8010/7362212346_b364ece063.jpg" width="400" height="300" alt="personal_logo"></a></p>
+
+<p>I don't see a way to easily add photos directly to github, so I'm going to host them on <a href="" title="http://www.flickr.com/photos/dmwoodall/sets/72157630042428783/">flickr</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[adding a code block]]></title>
