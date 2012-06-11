@@ -9,7 +9,7 @@
   <meta name="author" content="Dave Woodall">
 
   
-  <meta name="description" content="Man, you would think I could follow some instructions and easily get on here. After roughly 5 attempts, I&#8217;m finally able to post! I had some &hellip;">
+  <meta name="description" content="I&#8217;m finally able to post on Octopress! Woohoo! The directions to create the site were pretty straight forward, but I had some trouble getting &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -90,17 +90,52 @@
   </header>
 
 
-<div class="entry-content"><p>Man, you would think I could follow some instructions and easily get on here. After roughly 5 attempts, I&#8217;m finally able to post!</p>
+<div class="entry-content"><p>I&#8217;m finally able to post on Octopress! Woohoo!</p>
 
-<p>I had some trouble getting Octopress to launch, so I feel it&#8217;s appropriate to write a little bit about how I got it to load.There are three primary commands once you are blogging;</p>
+<p>The directions to create the site were pretty straight forward, but I had some trouble getting Octopress to catch my blog post.</p>
 
-<ol>
-<li><p>rake new_post[&#8220;this is the title of the post&#8221;]</p></li>
-<li><p>rake generate</p></li>
-<li><p>rake deploy</p></li>
-<li><p>git push origin source</p></li>
-</ol>
+<hr>
 
+
+<h3>Step 1</h3>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">rake</span> <span class="n">new_post</span><span class="o">[</span><span class="s2">&quot;this is the title of the post&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This creates the new post.</p>
+
+<h3>Step 2</h3>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+</span><span class='line'><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;your message here.&#39;</span>
+</span><span class='line'><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">source</span> <span class="c1"># make sure you add &#39;origin source&#39; or it will yell at you.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The weird thing is that you won&#8217;t see any changes to your github repo. (Until after step 4)</p>
+
+<h3>Step 3</h3>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">rake</span> <span class="n">generate</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This step creates the html blog doing some kind of github pages magic behind the scenes.</p>
+
+<h3>Step 4</h3>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">rake</span> <span class="n">deploy</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This actually sends the files to github, and to your blog address.</p>
 </div>
 
 
