@@ -4,7 +4,7 @@
   <title><![CDATA[The Internet is here to stay.]]></title>
   <link href="http://DMWoodall.github.com/atom.xml" rel="self"/>
   <link href="http://DMWoodall.github.com/"/>
-  <updated>2012-06-11T12:17:07-05:00</updated>
+  <updated>2012-06-18T11:03:01-05:00</updated>
   <id>http://DMWoodall.github.com/</id>
   <author>
     <name><![CDATA[Dave Woodall]]></name>
@@ -12,6 +12,101 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A chance at a Grand Slam with a guaranteed single]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/18/a-chance-at-a-grand-slam-with-a-guaranteed-single/"/>
+    <updated>2012-06-18T10:49:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/18/a-chance-at-a-grand-slam-with-a-guaranteed-single</id>
+    <content type="html"><![CDATA[<p>Programming is one of the few, if only, professions that offers a chance to hit a Grand Slam, while simultaneously guaranteeing a single.</p>
+
+<p>The demand for good programmers is so strong right now, that you&#8217;ll have no trouble finding employment at a great wage. Further, programming provides you the skills to build your idea into a business if you want to.</p>
+
+<p>Additionally, few jobs provide such a cool working environment. Great people, cool offices, working on a top of the line computer with Spotify. I can&#8217;t think of a better way to earn a living.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ruby instance variables]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables/"/>
+    <updated>2012-06-12T09:35:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables</id>
+    <content type="html"><![CDATA[<p>Did you know that a Class can also call on it&#8217;s own instance variables?</p>
+
+<figure class='code'><figcaption><span>While reading &#8220;Well Grounded Rubyist&#8221; </span><a href='http://app/controllers/application_controller.rb'>Classes using Instance Methods </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">class</span> <span class="nc">TheClass</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Just inside class definition block. Here&#39;s self:&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="nb">self</span>
+</span><span class='line'>  <span class="c1"># ---------------------</span>
+</span><span class='line'>  <span class="vi">@instance_variable</span> <span class="o">=</span> <span class="s2">&quot;I am an instance variable at the top level of a class body.&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;And here&#39;s the instance variable @v, belonging to </span><span class="si">#{</span><span class="nb">self</span><span class="si">}</span><span class="s2">;&quot;</span>
+</span><span class='line'>  <span class="c1"># ---------------------</span>
+</span><span class='line'>  <span class="nb">p</span> <span class="vi">@instance_variable</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">object_method</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Inside an instance method def block. Here&#39;s self:&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="nb">self</span><span class="o">.</span><span class="n">clean_name</span> <span class="c1"># notice that self has now changed to reference the object</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;And here&#39;s the instance variable @instance_variable, belonging to </span><span class="si">#{</span><span class="nb">self</span><span class="o">.</span><span class="n">clean_name</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="vi">@instance_variable</span> <span class="c1">#this will return nil, because it hasn&#39;t been defined within the object&#39;s scope.</span>
+</span><span class='line'>  <span class="k">end</span>  
+</span><span class='line'>  
+</span><span class='line'>  <span class="k">def</span> <span class="nf">clean_name</span>
+</span><span class='line'>      <span class="s2">&quot;Mr. Object&quot;</span>  
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># This is where we call on the class and methods;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">c</span> <span class="o">=</span> <span class="no">TheClass</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'><span class="n">c</span><span class="o">.</span><span class="n">show_variable</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ruby strings]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/11/ruby-strings/"/>
+    <updated>2012-06-11T16:18:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/11/ruby-strings</id>
+    <content type="html"><![CDATA[<p>Spend some time on the ruby docs and you&#8217;ll see how powerful they are.
+Strings can add white space
+&#8220;hello&#8221;.ljust(50)</p>
+
+<p>and string methods can remove white space
+&#8220;hello               &#8220;.strip</p>
+
+<p>it&#8217;s pretty incredible how much we are able to manipulate our own language using a computer.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[adding images]]></title>

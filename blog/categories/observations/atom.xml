@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: observations | The Internet is here to stay.]]></title>
+  <link href="http://DMWoodall.github.com/blog/categories/observations/atom.xml" rel="self"/>
+  <link href="http://DMWoodall.github.com/"/>
+  <updated>2012-06-18T11:03:01-05:00</updated>
+  <id>http://DMWoodall.github.com/</id>
+  <author>
+    <name><![CDATA[Dave Woodall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A chance at a Grand Slam with a guaranteed single]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/06/18/a-chance-at-a-grand-slam-with-a-guaranteed-single/"/>
+    <updated>2012-06-18T10:49:00-05:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/06/18/a-chance-at-a-grand-slam-with-a-guaranteed-single</id>
+    <content type="html"><![CDATA[<p>Programming is one of the few, if only, professions that offers a chance to hit a Grand Slam, while simultaneously guaranteeing a single.</p>
+
+<p>The demand for good programmers is so strong right now, that you'll have no trouble finding employment at a great wage. Further, programming provides you the skills to build your idea into a business if you want to.</p>
+
+<p>Additionally, few jobs provide such a cool working environment. Great people, cool offices, working on a top of the line computer with Spotify. I can't think of a better way to earn a living.</p>
+]]></content>
+  </entry>
+  
+</feed>
