@@ -8,7 +8,7 @@ categories: progress
 
 First post from my new home! We lived in Denver for four years before the house we rented, sold. We put our stuff in storage for what we thought would only be two weeks. (_7 months later..._)
 
-The highlights of that seven months of homelessness include attending [Code Academy](www.codeacademy.org), selling [my company](http://www.amb3r.com), spending two months in the [Upper Peninsula of Michigan](http://www.facebook.com/media/set/?set=a.10151108308456665.448397.564076664&type=3&l=4db3b5df8c), and some spiritual revelations that I may write about later. 
+The highlights of that seven months of homelessness include attending [Code Academy](http://www.codeacademy.org), selling [my company](http://www.amb3r.com), spending two months in the [Upper Peninsula of Michigan](http://www.facebook.com/media/set/?set=a.10151108308456665.448397.564076664&type=3&l=4db3b5df8c), and some spiritual revelations that I may write about later. 
 
 We decided the best place to land was Boulder because... it's Boulder!
 <blockquote class="twitter-tweet" data-in-reply-to="238722619061436416"><p><a href="https://twitter.com/stlstude"><s>@</s><b>stlstude</b></a> thanks! <a href="https://twitter.com/search/?q=%23Boulder"><s>#</s><b>Boulder</b></a> is the best of all worlds in that you can code in the day and camp in the night :-)</p>&mdash; Dave Woodall (@DMWoodall) <a href="https://twitter.com/DMWoodall/status/238983801223655424" data-datetime="2012-08-24T12:59:12+00:00">August 24, 2012</a></blockquote>
