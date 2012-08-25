@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | The Internet is here to stay.]]></title>
   <link href="http://DMWoodall.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://DMWoodall.github.com/"/>
-  <updated>2012-06-18T11:03:01-05:00</updated>
+  <updated>2012-08-25T16:15:13-06:00</updated>
   <id>http://DMWoodall.github.com/</id>
   <author>
     <name><![CDATA[Dave Woodall]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[adding images]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/11/adding-images/"/>
-    <updated>2012-06-11T11:31:00-05:00</updated>
+    <updated>2012-06-11T11:31:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/11/adding-images</id>
     <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/dmwoodall/7362212346/" title="personal_logo by Dave Woodall, on Flickr"><img src="http://farm9.staticflickr.com/8010/7362212346_b364ece063.jpg" width="400" height="300" alt="personal_logo"></a></p>
 
@@ -27,7 +27,7 @@
   <entry>
     <title type="html"><![CDATA[adding a code block]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block/"/>
-    <updated>2012-06-11T11:20:00-05:00</updated>
+    <updated>2012-06-11T11:20:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block</id>
     <content type="html"><![CDATA[<p>I was reading the <a href="" title="http://octopress.org/docs/plugins/codeblock/">Octopress Documentation</a> about code blocks and decided to try it here;</p>
 
@@ -52,7 +52,7 @@
   <entry>
     <title type="html"><![CDATA[Finally on the Octopress]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress/"/>
-    <updated>2012-06-11T10:59:00-05:00</updated>
+    <updated>2012-06-11T10:59:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress</id>
     <content type="html"><![CDATA[<p>I'm finally able to post on Octopress! Woohoo!</p>
 

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: html, | The Internet is here to stay.]]></title>
+  <link href="http://DMWoodall.github.com/blog/categories/html-/atom.xml" rel="self"/>
+  <link href="http://DMWoodall.github.com/"/>
+  <updated>2012-08-25T16:15:13-06:00</updated>
+  <id>http://DMWoodall.github.com/</id>
+  <author>
+    <name><![CDATA[Dave Woodall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[html-forms]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/07/19/html-forms/"/>
+    <updated>2012-07-19T12:42:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/07/19/html-forms</id>
+    <content type="html"><![CDATA[<p>Treehouse is so well organized that I'm taking the time to review the fundamentals. Over the past two years I've consumed several blogs, books, videos, and talks but I know it didn't all sink in. Through Treehouse's quizzes and challenges I'm able to see where the gaps are.</p>
+
+<p>Reviewing their <a href="http://teamtreehouse.com/library/design-foundations/html">html badge</a> how little I knew about forms. Here are my notes from <a href="http://teamtreehouse.com/library/design-foundations/html/forms">forms badge</a>. A form will have the following format;</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;form action="#" method="POST" name="my Form">
+</span><span class='line'>  &lt;input type='text' name='username'>
+</span><span class='line'>  &lt;input type='submit'>
+</span><span class='line'>&lt;/form></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h4>Action</h4>
+
+<p>Where you send the form once it's submitted.</p>
+
+<h4>Method</h4>
+
+<p>This refers to HTTP GET, POST, PUT, DELETE</p>
+
+<h4>Name</h4>
+
+<p>Name of the form</p>
+
+<h4>Type</h4>
+
+<p>Type is the aspect you add to the form to instruct what type of input field you want. Most popular are 'text', 'radio', 'checkbox'</p>
+
+<h4>Text Area</h4>
+
+<p>Use textarea when you want a larger typing area for something like comments.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;textarea name="essay" rows="10" cols="30">&lt;/textarea></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h4>Select</h4>
+
+<p>For creating dropdown lists. Good when there are a lot of options.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;select>
+</span><span class='line'>  &lt;optgroup label="Americas">&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>&lt;option&gt;North America&lt;/option&gt;
+</span><span class='line'>&lt;option&gt;South America&lt;/option&gt;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  &lt;/optgroup>
+</span><span class='line'>  &lt;optgroup label="Americas">&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>&lt;option&gt;Europe&lt;/option&gt;
+</span><span class='line'>&lt;option&gt;Europe&lt;/option&gt;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  &lt;/optgroup>
+</span><span class='line'>&lt;/select></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><optgroup> is for organizing drop downs and making non-selectable categories. Very nice!</p>
+
+<h4>Name</h4>
+
+<p>Name is important for grouping items together. For example, if you have two radio buttons, the similar name will cluster them together.</p>
+
+<h4>Value</h4>
+
+<p>Value relates to server side programming to know how to store these items.</p>
+
+<h4>Labels</h4>
+
+<h4>Fieldset &amp; Legend</h4>
+
+<p>Use <fieldset> to organize the and surround with a border form.
+Use <legend> to provide a title on that same information.
+Pass a center if you want to align; <legend align="center"></p>
+]]></content>
+  </entry>
+  
+</feed>

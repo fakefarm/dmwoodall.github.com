@@ -4,7 +4,7 @@
   <title><![CDATA[The Internet is here to stay.]]></title>
   <link href="http://DMWoodall.github.com/atom.xml" rel="self"/>
   <link href="http://DMWoodall.github.com/"/>
-  <updated>2012-06-18T11:03:01-05:00</updated>
+  <updated>2012-08-25T16:15:13-06:00</updated>
   <id>http://DMWoodall.github.com/</id>
   <author>
     <name><![CDATA[Dave Woodall]]></name>
@@ -14,9 +14,345 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Hello Boulder!]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/08/25/hello-boulder/"/>
+    <updated>2012-08-25T14:55:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/08/25/hello-boulder</id>
+    <content type="html"><![CDATA[<p>First post from my new home! We lived in Denver for four years before the house we rented, sold. We put our stuff in storage for what we thought would only be two weeks. (<em>7 months later&#8230;</em>)</p>
+
+<p>The highlights of that seven months of homelessness include attending <a href="" title="www.codeacademy.org">Code Academy</a>, selling <a href="" title="http://www.amb3r.com">my company</a>, spending two months in the <a href="" title="http://www.facebook.com/media/set/?set=a.10151108308456665.448397.564076664&amp;type=3&amp;l=4db3b5df8c">Upper Peninsula of Michigan</a>, and some spiritual revelations that I may write about later.</p>
+
+<p>We decided the best place to land was Boulder because&#8230; it&#8217;s Boulder!</p>
+
+<blockquote class="twitter-tweet" data-in-reply-to="238722619061436416"><p><a href="https://twitter.com/stlstude"><s>@</s><b>stlstude</b></a> thanks! <a href="https://twitter.com/search/?q=%23Boulder"><s>#</s><b>Boulder</b></a> is the best of all worlds in that you can code in the day and camp in the night :-)</p>&mdash; Dave Woodall (@DMWoodall) <a href="https://twitter.com/DMWoodall/status/238983801223655424" data-datetime="2012-08-24T12:59:12+00:00">August 24, 2012</a></blockquote>
+
+
+<script src="http://DMWoodall.github.com//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I really can&#8217;t think of a better place to be! The outdoors, small town feel, the weather, several awesome dev shops, booming startup community, and a willing group of people to help on my journey toward becoming a software craftsman.</p>
+
+<p>I really appreciated <a href="" title="http://www.learnwithjeff.com/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/">Jeff&#8217;s post</a> that these attempts to swim upstream are not in vain. I&#8217;m already signed up for several <a href="" title="http://www.meetup.com/members/21704991/">meetups</a> and resuming my code progress with <a href="" title="http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657">Well Grounded Rubyist</a>.</p>
+
+<p>I&#8217;ll be at <a href="" title="boulderbugmash.org">Boulder Bug Mash</a> and the <a href="" title="http://quickleft.com/blog/quick-left-sendgrid-hackfest">QuickLeft + SendGrid Hackfest</a> this week. Hope to see you there!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS3 Selectors]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/07/20/css3-selectors/"/>
+    <updated>2012-07-20T17:19:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/07/20/css3-selectors</id>
+    <content type="html"><![CDATA[<p>Notes from <a href="" title="http://teamtreehouse.com/library/design-foundations/css3/selectors">&#8220;CSS Selectors&#8221;</a>.</p>
+
+<h2>Attribute Selectors</h2>
+
+<p>{% codeblock %}
+img[src<sup>=&#8221;images&#8221;]{</sup>
+  border: 5px solid orange;
+}
+{% endcodeblock %}
+^ is looking for any image tags that have a source attribute that begins with exact string &#8220;images&#8221;</p>
+
+<p>{% codeblock %}</p>
+
+<p>img[src$=&#8221;.jpg&#8221;]{
+  border: 5px solid green;
+}
+{% endcodeblock %}
+$ is looking for any image tags that have a source attribute that ends with exact string &#8220;.jpg&#8221;</p>
+
+<p>a[href*=&#8221;#&#8221;]{
+  border: 5px solid orange;
+}
+{% endcodeblock %}</p>
+
+<p>selecting all &#8216;a&#8217; tags that have href attributes that contain exact sub-string.</p>
+
+<h2>Pseudo Classes</h2>
+
+<p>:root{
+  background: orange;
+}</p>
+
+<h4>Nth-Child()</h4>
+
+<p>{% codeblock %}</p>
+
+<h1>nav li:nth-child(1){</h1>
+
+<p>  border: 5px solid orange;
+}
+{% endcodeblock %}
+Useful for selecting any children, by number</p>
+
+<h4>nth-last-child()</h4>
+
+<p>goes to the last child, and counts backwards.</p>
+
+<h4>nth-of-type</h4>
+
+<p>Allows you to select based on the type - (class &#8216;post&#8217; for example.)</p>
+
+<p>{% codeblock %}</p>
+
+<h1>content .post:nth-of-type(2){</h1>
+
+<p>  background: orange;
+}
+{% endcodeblock %}</p>
+
+<h4>nth-last-of-type()</h4>
+
+<p>counts backwards</p>
+
+<h4>last-child()</h4>
+
+<p>a CSS2 feature, but one to notice.</p>
+
+<h4>first-of-type()</h4>
+
+<p>same as nth-of-type(1)</p>
+
+<h4>last-of-type</h4>
+
+<h4>only-child</h4>
+
+<p>{% codeblock %}
+.header h1:only-child{
+  background:orange;
+}
+{% endcodeblock %}
+Only selects groupings that have a single child element.</p>
+
+<h4>only-of-type</h4>
+
+<p>{% codeblock %}
+.header h1:only-of-type{
+  background:orange;
+}
+{% endcodeblock %}</p>
+
+<h4>empty</h4>
+
+<p>{% codeblock %}
+.header:empty{
+  background: orange;
+  width: 200px;
+  height: 200px;
+  display:block;
+}
+{% endcodeblock %}</p>
+
+<h2>Miscellaneous Selectors</h2>
+
+<h4>Target pseudo class</h4>
+
+<p>{% codeblock %}</p>
+
+<h1>poll:target{</h1>
+
+<p>}
+{% endcodeblock %}
+Once you click on the target, once it&#8217;s highlighted it will activate.</p>
+
+<h4>Enabled</h4>
+
+<h4>checked</h4>
+
+<p>shows when a button is being selected. (Can&#8217;t change the background color for some reason&#8230;)</p>
+
+<p>{% codeblock %}</p>
+
+<h1>poll input:checked{</h1>
+
+<p>  width:30px;
+}
+{% endcodeblock %}</p>
+
+<h4>Negate</h4>
+
+<p>Select radio buttons that are not checked.</p>
+
+<p>{% codeblock %}</p>
+
+<h1>poll input:not(:checked){</h1>
+
+<p>}
+{% endcodeblock %}</p>
+
+<h4>General Sibling combinator</h4>
+
+<p>{% codeblock %}
+ul ~ #sidebar{
+  background: orange;
+}
+{% endcodeblock %}</p>
+
+<p>~ character - anything comes after is the sibling that will actually be selected.
+the part that comes before the &#8220;~&#8221; is a sibling that came previously.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[html-forms]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/07/19/html-forms/"/>
+    <updated>2012-07-19T12:42:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/07/19/html-forms</id>
+    <content type="html"><![CDATA[<p>Treehouse is so well organized that I&#8217;m taking the time to review the fundamentals. Over the past two years I&#8217;ve consumed several blogs, books, videos, and talks but I know it didn&#8217;t all sink in. Through Treehouse&#8217;s quizzes and challenges I&#8217;m able to see where the gaps are.</p>
+
+<p>Reviewing their <a href="http://teamtreehouse.com/library/design-foundations/html">html badge</a> how little I knew about forms. Here are my notes from <a href="http://teamtreehouse.com/library/design-foundations/html/forms">forms badge</a>. A form will have the following format;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;form action="#" method="POST" name="my Form">
+</span><span class='line'>  &lt;input type='text' name='username'>
+</span><span class='line'>  &lt;input type='submit'>
+</span><span class='line'>&lt;/form></span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Action</h4>
+
+<p>Where you send the form once it&#8217;s submitted.</p>
+
+<h4>Method</h4>
+
+<p>This refers to HTTP GET, POST, PUT, DELETE</p>
+
+<h4>Name</h4>
+
+<p>Name of the form</p>
+
+<h4>Type</h4>
+
+<p>Type is the aspect you add to the form to instruct what type of input field you want. Most popular are &#8216;text&#8217;, &#8216;radio&#8217;, &#8216;checkbox&#8217;</p>
+
+<h4>Text Area</h4>
+
+<p>Use textarea when you want a larger typing area for something like comments.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;textarea name="essay" rows="10" cols="30">&lt;/textarea></span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Select</h4>
+
+<p>For creating dropdown lists. Good when there are a lot of options.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;select>
+</span><span class='line'>  &lt;optgroup label="Americas">
+</span><span class='line'>    &lt;option>North America&lt;/option>
+</span><span class='line'>    &lt;option>South America&lt;/option>
+</span><span class='line'>  &lt;/optgroup>
+</span><span class='line'>  &lt;optgroup label="Americas">
+</span><span class='line'>    &lt;option>Europe&lt;/option>
+</span><span class='line'>    &lt;option>Europe&lt;/option>
+</span><span class='line'>  &lt;/optgroup>
+</span><span class='line'>&lt;/select></span></code></pre></td></tr></table></div></figure>
+
+
+<p><optgroup> is for organizing drop downs and making non-selectable categories. Very nice!</p>
+
+<h4>Name</h4>
+
+<p>Name is important for grouping items together. For example, if you have two radio buttons, the similar name will cluster them together.</p>
+
+<h4>Value</h4>
+
+<p>Value relates to server side programming to know how to store these items.</p>
+
+<h4>Labels</h4>
+
+<h4>Fieldset &amp; Legend</h4>
+
+<p>Use <fieldset> to organize the and surround with a border form.
+Use <legend> to provide a title on that same information.
+Pass a center if you want to align; <legend align="center"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[up in the treehouse]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/07/19/up-in-the-treehouse/"/>
+    <updated>2012-07-19T12:40:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/07/19/up-in-the-treehouse</id>
+    <content type="html"><![CDATA[<p>I just joined <a href="http://www.teamtreehouse.com">Team Treehouse</a>. It&#8217;s one of the better online tutorial sites I&#8217;ve found. I really enjoy the badge system and the way they teach with progress in mind. They have a nice combination of videos, quizzes, and code challenges.</p>
+
+<p>Feel free to <a href="http://teamtreehouse.com/davewoodall">View my profile</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Notes from Code Academy dot com]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/07/11/notes-from-code-academy-dot-com/"/>
+    <updated>2012-07-11T08:43:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/07/11/notes-from-code-academy-dot-com</id>
+    <content type="html"><![CDATA[<p>I started <a href="http://CodeAcademy.com/">CodeAcademy.com</a> yesterday to learn JavaScript. Couple things that I wanted to record;</p>
+
+<h3>syntax</h3>
+
+<p>JavaScript, needs extra syntax to work. Things such as semi-colons, the word var, and braces. JavaScript is also case sensitive.</p>
+
+<h3>naming a variable</h3>
+
+<p>I need to add the word &#8216;var&#8217; to describe a variable, and add the semi-colon at the end. It&#8217;s taken a little getting used to.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// An example; 
+</span><span class='line'>var name = "Dave"</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>naming a function</h3>
+
+<p>To create a function you do it the same by calling;</p>
+
+<p>An Example;
+var printReport = function(){
+  &#8230;
+};
+the semi-colon doesn&#8217;t show up until the end of the function.</p>
+
+<h3>for loops</h3>
+
+<p>Creating a for loop needs to declare three things;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// An example; 
+</span><span class='line'>for(i = 0; i &lt;= 10; i++){
+</span><span class='line'>  // code here
+</span><span class='line'>};</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sets that tripped me up at first
+1. i is the variable incrementor.
+2. Set i to some value
+3. Then add a semi-colon!
+4. Set the height to the incrementor (i)
+5. Then add a semi-colon!
+6. Set the incrementor as a ++, which is a shorthand of saying &#8220;Add 1&#8221;</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[A chance at a Grand Slam with a guaranteed single]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/18/a-chance-at-a-grand-slam-with-a-guaranteed-single/"/>
-    <updated>2012-06-18T10:49:00-05:00</updated>
+    <updated>2012-06-18T10:49:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/18/a-chance-at-a-grand-slam-with-a-guaranteed-single</id>
     <content type="html"><![CDATA[<p>Programming is one of the few, if only, professions that offers a chance to hit a Grand Slam, while simultaneously guaranteeing a single.</p>
 
@@ -29,7 +365,7 @@
   <entry>
     <title type="html"><![CDATA[ruby instance variables]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables/"/>
-    <updated>2012-06-12T09:35:00-05:00</updated>
+    <updated>2012-06-12T09:35:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables</id>
     <content type="html"><![CDATA[<p>Did you know that a Class can also call on it&#8217;s own instance variables?</p>
 
@@ -95,7 +431,7 @@
   <entry>
     <title type="html"><![CDATA[ruby strings]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/11/ruby-strings/"/>
-    <updated>2012-06-11T16:18:00-05:00</updated>
+    <updated>2012-06-11T16:18:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/11/ruby-strings</id>
     <content type="html"><![CDATA[<p>Spend some time on the ruby docs and you&#8217;ll see how powerful they are.
 Strings can add white space
@@ -111,7 +447,7 @@ Strings can add white space
   <entry>
     <title type="html"><![CDATA[adding images]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/11/adding-images/"/>
-    <updated>2012-06-11T11:31:00-05:00</updated>
+    <updated>2012-06-11T11:31:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/11/adding-images</id>
     <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/dmwoodall/7362212346/" title="personal_logo by Dave Woodall, on Flickr"><img src="http://farm9.staticflickr.com/8010/7362212346_b364ece063.jpg" width="400" height="300" alt="personal_logo"></a></p>
 
@@ -122,7 +458,7 @@ Strings can add white space
   <entry>
     <title type="html"><![CDATA[adding a code block]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block/"/>
-    <updated>2012-06-11T11:20:00-05:00</updated>
+    <updated>2012-06-11T11:20:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block</id>
     <content type="html"><![CDATA[<p>I was reading the <a href="" title="http://octopress.org/docs/plugins/codeblock/">Octopress Documentation</a> about code blocks and decided to try it here;</p>
 
@@ -140,7 +476,7 @@ Strings can add white space
   <entry>
     <title type="html"><![CDATA[Finally on the Octopress]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress/"/>
-    <updated>2012-06-11T10:59:00-05:00</updated>
+    <updated>2012-06-11T10:59:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress</id>
     <content type="html"><![CDATA[<p>I&#8217;m finally able to post on Octopress! Woohoo!</p>
 

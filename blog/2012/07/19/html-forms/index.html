@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>ruby instance variables - The Internet is here to stay.</title>
+  <title>html-forms - The Internet is here to stay.</title>
   <meta name="author" content="Dave Woodall">
 
   
-  <meta name="description" content="Did you know that a Class can also call on it&#8217;s own instance variables? While reading &#8220;Well Grounded Rubyist&#8221; Classes using &hellip;">
+  <meta name="description" content="Treehouse is so well organized that I&#8217;m taking the time to review the fundamentals. Over the past two years I&#8217;ve consumed several blogs, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables/">
+  <link rel="canonical" href="http://DMWoodall.github.com/blog/2012/07/19/html-forms/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Ruby Instance Variables</h1>
+      <h1 class="entry-title">Html-forms</h1>
     
     
       <p class="meta">
@@ -83,7 +83,7 @@
   
 
 
-<time datetime="2012-06-12T09:35:00-06:00" pubdate data-updated="true">Jun 12<span>th</span>, 2012</time>
+<time datetime="2012-07-19T12:42:00-06:00" pubdate data-updated="true">Jul 19<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -92,9 +92,49 @@
   </header>
 
 
-<div class="entry-content"><p>Did you know that a Class can also call on it&#8217;s own instance variables?</p>
+<div class="entry-content"><p>Treehouse is so well organized that I&#8217;m taking the time to review the fundamentals. Over the past two years I&#8217;ve consumed several blogs, books, videos, and talks but I know it didn&#8217;t all sink in. Through Treehouse&#8217;s quizzes and challenges I&#8217;m able to see where the gaps are.</p>
 
-<figure class='code'><figcaption><span>While reading &#8220;Well Grounded Rubyist&#8221; </span><a href='http://app/controllers/application_controller.rb'>Classes using Instance Methods </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>Reviewing their <a href="http://teamtreehouse.com/library/design-foundations/html">html badge</a> how little I knew about forms. Here are my notes from <a href="http://teamtreehouse.com/library/design-foundations/html/forms">forms badge</a>. A form will have the following format;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;form action="#" method="POST" name="my Form">
+</span><span class='line'>  &lt;input type='text' name='username'>
+</span><span class='line'>  &lt;input type='submit'>
+</span><span class='line'>&lt;/form></span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Action</h4>
+
+<p>Where you send the form once it&#8217;s submitted.</p>
+
+<h4>Method</h4>
+
+<p>This refers to HTTP GET, POST, PUT, DELETE</p>
+
+<h4>Name</h4>
+
+<p>Name of the form</p>
+
+<h4>Type</h4>
+
+<p>Type is the aspect you add to the form to instruct what type of input field you want. Most popular are &#8216;text&#8217;, &#8216;radio&#8217;, &#8216;checkbox&#8217;</p>
+
+<h4>Text Area</h4>
+
+<p>Use textarea when you want a larger typing area for something like comments.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;textarea name="essay" rows="10" cols="30">&lt;/textarea></span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Select</h4>
+
+<p>For creating dropdown lists. Good when there are a lot of options.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -104,52 +144,35 @@
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">class</span> <span class="nc">TheClass</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Just inside class definition block. Here&#39;s self:&quot;</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="nb">self</span>
-</span><span class='line'>  <span class="c1"># ---------------------</span>
-</span><span class='line'>  <span class="vi">@instance_variable</span> <span class="o">=</span> <span class="s2">&quot;I am an instance variable at the top level of a class body.&quot;</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;And here&#39;s the instance variable @v, belonging to </span><span class="si">#{</span><span class="nb">self</span><span class="si">}</span><span class="s2">;&quot;</span>
-</span><span class='line'>  <span class="c1"># ---------------------</span>
-</span><span class='line'>  <span class="nb">p</span> <span class="vi">@instance_variable</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">object_method</span>
-</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Inside an instance method def block. Here&#39;s self:&quot;</span>
-</span><span class='line'>      <span class="nb">puts</span> <span class="nb">self</span><span class="o">.</span><span class="n">clean_name</span> <span class="c1"># notice that self has now changed to reference the object</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;And here&#39;s the instance variable @instance_variable, belonging to </span><span class="si">#{</span><span class="nb">self</span><span class="o">.</span><span class="n">clean_name</span><span class="si">}</span><span class="s2">&quot;</span>
-</span><span class='line'>      <span class="nb">puts</span> <span class="vi">@instance_variable</span> <span class="c1">#this will return nil, because it hasn&#39;t been defined within the object&#39;s scope.</span>
-</span><span class='line'>  <span class="k">end</span>  
-</span><span class='line'>  
-</span><span class='line'>  <span class="k">def</span> <span class="nf">clean_name</span>
-</span><span class='line'>      <span class="s2">&quot;Mr. Object&quot;</span>  
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1"># This is where we call on the class and methods;</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">c</span> <span class="o">=</span> <span class="no">TheClass</span><span class="o">.</span><span class="n">new</span>
-</span><span class='line'><span class="n">c</span><span class="o">.</span><span class="n">show_variable</span>
-</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;select>
+</span><span class='line'>  &lt;optgroup label="Americas">
+</span><span class='line'>    &lt;option>North America&lt;/option>
+</span><span class='line'>    &lt;option>South America&lt;/option>
+</span><span class='line'>  &lt;/optgroup>
+</span><span class='line'>  &lt;optgroup label="Americas">
+</span><span class='line'>    &lt;option>Europe&lt;/option>
+</span><span class='line'>    &lt;option>Europe&lt;/option>
+</span><span class='line'>  &lt;/optgroup>
+</span><span class='line'>&lt;/select></span></code></pre></td></tr></table></div></figure>
 
 
+<p><optgroup> is for organizing drop downs and making non-selectable categories. Very nice!</p>
 
+<h4>Name</h4>
+
+<p>Name is important for grouping items together. For example, if you have two radio buttons, the similar name will cluster them together.</p>
+
+<h4>Value</h4>
+
+<p>Value relates to server side programming to know how to store these items.</p>
+
+<h4>Labels</h4>
+
+<h4>Fieldset &amp; Legend</h4>
+
+<p>Use <fieldset> to organize the and surround with a border form.
+Use <legend> to provide a title on that same information.
+Pass a center if you want to align; <legend align="center"></p>
 </div>
 
 
@@ -172,12 +195,12 @@
   
 
 
-<time datetime="2012-06-12T09:35:00-06:00" pubdate data-updated="true">Jun 12<span>th</span>, 2012</time>
+<time datetime="2012-07-19T12:42:00-06:00" pubdate data-updated="true">Jul 19<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/grounded/'>Grounded</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/rubyist-/'>Rubyist,</a>, <a class='category' href='/blog/categories/syntax/'>Syntax</a>, <a class='category' href='/blog/categories/well/'>Well</a>
+    <a class='category' href='/blog/categories/forms/'>forms</a>, <a class='category' href='/blog/categories/html-/'>html,</a>
   
 </span>
 
@@ -186,7 +209,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables/" data-via="dmwoodall" data-counturl="http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://DMWoodall.github.com/blog/2012/07/19/html-forms/" data-via="dmwoodall" data-counturl="http://DMWoodall.github.com/blog/2012/07/19/html-forms/" >Tweet</a>
   
   
   
@@ -195,10 +218,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/06/11/ruby-strings/" title="Previous Post: ruby strings">&laquo; ruby strings</a>
+        <a class="basic-alignment left" href="/blog/2012/07/19/up-in-the-treehouse/" title="Previous Post: up in the treehouse">&laquo; up in the treehouse</a>
       
       
-        <a class="basic-alignment right" href="/blog/2012/06/18/a-chance-at-a-grand-slam-with-a-guaranteed-single/" title="Next Post: A chance at a Grand Slam with a guaranteed single">A chance at a Grand Slam with a guaranteed single &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2012/07/20/css3-selectors/" title="Next Post: CSS3 Selectors">CSS3 Selectors &raquo;</a>
       
     </p>
   </footer>
@@ -310,8 +333,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables/';
-        var disqus_url = 'http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables/';
+        var disqus_identifier = 'http://DMWoodall.github.com/blog/2012/07/19/html-forms/';
+        var disqus_url = 'http://DMWoodall.github.com/blog/2012/07/19/html-forms/';
         var disqus_script = 'embed.js';
       
     (function () {

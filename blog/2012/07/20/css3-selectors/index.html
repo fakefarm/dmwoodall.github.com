@@ -5,11 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: ruby, - The Internet is here to stay.</title>
+  <title>CSS3 Selectors - The Internet is here to stay.</title>
   <meta name="author" content="Dave Woodall">
 
   
-  <meta name="description" content="Category: ruby,">
+  <meta name="description" content="Notes from &#8220;CSS Selectors&#8221;. Attribute Selectors {% codeblock %}
+img[src=&#8221;images&#8221;]{ border: 5px solid orange;
+}
+{% &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://DMWoodall.github.comblog/categories/ruby-/">
+  <link rel="canonical" href="http://DMWoodall.github.com/blog/2012/07/20/css3-selectors/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,36 +66,242 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Ruby,</h1>
+    
+      <h1 class="entry-title">CSS3 Selectors</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-20T17:19:00-06:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>Notes from <a href="" title="http://teamtreehouse.com/library/design-foundations/css3/selectors">&#8220;CSS Selectors&#8221;</a>.</p>
 
-  
-  <h2>2012</h2>
+<h2>Attribute Selectors</h2>
 
-<article>
-  
-<h1><a href="/blog/2012/06/11/ruby-strings/">ruby strings</a></h1>
-<time datetime="2012-06-11T16:18:00-06:00" pubdate><span class='month'>Jun</span> <span class='day'>11</span> <span class='year'>2012</span></time>
+<p>{% codeblock %}
+img[src<sup>=&#8221;images&#8221;]{</sup>
+  border: 5px solid orange;
+}
+{% endcodeblock %}
+^ is looking for any image tags that have a source attribute that begins with exact string &#8220;images&#8221;</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/ruby-/'>ruby,</a>, <a class='category' href='/blog/categories/syntax/'>syntax</a></span>
-</footer>
+<p>{% codeblock %}</p>
 
+<p>img[src$=&#8221;.jpg&#8221;]{
+  border: 5px solid green;
+}
+{% endcodeblock %}
+$ is looking for any image tags that have a source attribute that ends with exact string &#8220;.jpg&#8221;</p>
 
-</article>
+<p>a[href*=&#8221;#&#8221;]{
+  border: 5px solid orange;
+}
+{% endcodeblock %}</p>
 
+<p>selecting all &#8216;a&#8217; tags that have href attributes that contain exact sub-string.</p>
+
+<h2>Pseudo Classes</h2>
+
+<p>:root{
+  background: orange;
+}</p>
+
+<h4>Nth-Child()</h4>
+
+<p>{% codeblock %}</p>
+
+<h1>nav li:nth-child(1){</h1>
+
+<p>  border: 5px solid orange;
+}
+{% endcodeblock %}
+Useful for selecting any children, by number</p>
+
+<h4>nth-last-child()</h4>
+
+<p>goes to the last child, and counts backwards.</p>
+
+<h4>nth-of-type</h4>
+
+<p>Allows you to select based on the type - (class &#8216;post&#8217; for example.)</p>
+
+<p>{% codeblock %}</p>
+
+<h1>content .post:nth-of-type(2){</h1>
+
+<p>  background: orange;
+}
+{% endcodeblock %}</p>
+
+<h4>nth-last-of-type()</h4>
+
+<p>counts backwards</p>
+
+<h4>last-child()</h4>
+
+<p>a CSS2 feature, but one to notice.</p>
+
+<h4>first-of-type()</h4>
+
+<p>same as nth-of-type(1)</p>
+
+<h4>last-of-type</h4>
+
+<h4>only-child</h4>
+
+<p>{% codeblock %}
+.header h1:only-child{
+  background:orange;
+}
+{% endcodeblock %}
+Only selects groupings that have a single child element.</p>
+
+<h4>only-of-type</h4>
+
+<p>{% codeblock %}
+.header h1:only-of-type{
+  background:orange;
+}
+{% endcodeblock %}</p>
+
+<h4>empty</h4>
+
+<p>{% codeblock %}
+.header:empty{
+  background: orange;
+  width: 200px;
+  height: 200px;
+  display:block;
+}
+{% endcodeblock %}</p>
+
+<h2>Miscellaneous Selectors</h2>
+
+<h4>Target pseudo class</h4>
+
+<p>{% codeblock %}</p>
+
+<h1>poll:target{</h1>
+
+<p>}
+{% endcodeblock %}
+Once you click on the target, once it&#8217;s highlighted it will activate.</p>
+
+<h4>Enabled</h4>
+
+<h4>checked</h4>
+
+<p>shows when a button is being selected. (Can&#8217;t change the background color for some reason&#8230;)</p>
+
+<p>{% codeblock %}</p>
+
+<h1>poll input:checked{</h1>
+
+<p>  width:30px;
+}
+{% endcodeblock %}</p>
+
+<h4>Negate</h4>
+
+<p>Select radio buttons that are not checked.</p>
+
+<p>{% codeblock %}</p>
+
+<h1>poll input:not(:checked){</h1>
+
+<p>}
+{% endcodeblock %}</p>
+
+<h4>General Sibling combinator</h4>
+
+<p>{% codeblock %}
+ul ~ #sidebar{
+  background: orange;
+}
+{% endcodeblock %}</p>
+
+<p>~ character - anything comes after is the sibling that will actually be selected.
+the part that comes before the &#8220;~&#8221; is a sibling that came previously.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Dave Woodall</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-20T17:19:00-06:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>CSS</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://DMWoodall.github.com/blog/2012/07/20/css3-selectors/" data-via="dmwoodall" data-counturl="http://DMWoodall.github.com/blog/2012/07/20/css3-selectors/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/07/19/html-forms/" title="Previous Post: html-forms">&laquo; html-forms</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/08/25/hello-boulder/" title="Next Post: Hello Boulder!">Hello Boulder! &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -193,7 +402,10 @@
       var disqus_shortname = 'dmwoodall';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://DMWoodall.github.com/blog/2012/07/20/css3-selectors/';
+        var disqus_url = 'http://DMWoodall.github.com/blog/2012/07/20/css3-selectors/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

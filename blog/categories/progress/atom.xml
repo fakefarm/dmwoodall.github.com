@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: progress | The Internet is here to stay.]]></title>
+  <link href="http://DMWoodall.github.com/blog/categories/progress/atom.xml" rel="self"/>
+  <link href="http://DMWoodall.github.com/"/>
+  <updated>2012-08-25T16:15:13-06:00</updated>
+  <id>http://DMWoodall.github.com/</id>
+  <author>
+    <name><![CDATA[Dave Woodall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Boulder!]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/08/25/hello-boulder/"/>
+    <updated>2012-08-25T14:55:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/08/25/hello-boulder</id>
+    <content type="html"><![CDATA[<p>First post from my new home! We lived in Denver for four years before the house we rented, sold. We put our stuff in storage for what we thought would only be two weeks. (<em>7 months later...</em>)</p>
+
+<p>The highlights of that seven months of homelessness include attending <a href="" title="www.codeacademy.org">Code Academy</a>, selling <a href="" title="http://www.amb3r.com">my company</a>, spending two months in the <a href="" title="http://www.facebook.com/media/set/?set=a.10151108308456665.448397.564076664&amp;type=3&amp;l=4db3b5df8c">Upper Peninsula of Michigan</a>, and some spiritual revelations that I may write about later.</p>
+
+<p>We decided the best place to land was Boulder because... it's Boulder!</p>
+
+<blockquote class="twitter-tweet" data-in-reply-to="238722619061436416"><p><a href="https://twitter.com/stlstude"><s>@</s><b>stlstude</b></a> thanks! <a href="https://twitter.com/search/?q=%23Boulder"><s>#</s><b>Boulder</b></a> is the best of all worlds in that you can code in the day and camp in the night :-)</p>&mdash; Dave Woodall (@DMWoodall) <a href="https://twitter.com/DMWoodall/status/238983801223655424" data-datetime="2012-08-24T12:59:12+00:00">August 24, 2012</a></blockquote>
+
+
+<script src="http://DMWoodall.github.com//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I really can't think of a better place to be! The outdoors, small town feel, the weather, several awesome dev shops, booming startup community, and a willing group of people to help on my journey toward becoming a software craftsman.</p>
+
+<p>I really appreciated <a href="" title="http://www.learnwithjeff.com/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/">Jeff's post</a> that these attempts to swim upstream are not in vain. I'm already signed up for several <a href="" title="http://www.meetup.com/members/21704991/">meetups</a> and resuming my code progress with <a href="" title="http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657">Well Grounded Rubyist</a>.</p>
+
+<p>I'll be at <a href="" title="boulderbugmash.org">Boulder Bug Mash</a> and the <a href="" title="http://quickleft.com/blog/quick-left-sendgrid-hackfest">QuickLeft + SendGrid Hackfest</a> this week. Hope to see you there!</p>
+]]></content>
+  </entry>
+  
+</feed>

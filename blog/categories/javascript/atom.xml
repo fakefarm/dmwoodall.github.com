@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: javascript | The Internet is here to stay.]]></title>
+  <link href="http://DMWoodall.github.com/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://DMWoodall.github.com/"/>
+  <updated>2012-08-25T16:15:13-06:00</updated>
+  <id>http://DMWoodall.github.com/</id>
+  <author>
+    <name><![CDATA[Dave Woodall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Notes from Code Academy dot com]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/07/11/notes-from-code-academy-dot-com/"/>
+    <updated>2012-07-11T08:43:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/07/11/notes-from-code-academy-dot-com</id>
+    <content type="html"><![CDATA[<p>I started <a href="http://CodeAcademy.com/">CodeAcademy.com</a> yesterday to learn JavaScript. Couple things that I wanted to record;</p>
+
+<h3>syntax</h3>
+
+<p>JavaScript, needs extra syntax to work. Things such as semi-colons, the word var, and braces. JavaScript is also case sensitive.</p>
+
+<h3>naming a variable</h3>
+
+<p>I need to add the word 'var' to describe a variable, and add the semi-colon at the end. It's taken a little getting used to.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// An example;
+</span><span class='line'>var name = "Dave"</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>naming a function</h3>
+
+<p>To create a function you do it the same by calling;</p>
+
+<p>An Example;
+var printReport = function(){
+  ...
+};
+the semi-colon doesn't show up until the end of the function.</p>
+
+<h3>for loops</h3>
+
+<p>Creating a for loop needs to declare three things;</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// An example;
+</span><span class='line'>for(i = 0; i &lt;= 10; i++){
+</span><span class='line'>  // code here
+</span><span class='line'>};</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Sets that tripped me up at first
+1. i is the variable incrementor.
+2. Set i to some value
+3. Then add a semi-colon!
+4. Set the height to the incrementor (i)
+5. Then add a semi-colon!
+6. Set the incrementor as a ++, which is a shorthand of saying "Add 1"</p>
+]]></content>
+  </entry>
+  
+</feed>

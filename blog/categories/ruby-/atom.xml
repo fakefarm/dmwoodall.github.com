@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby, | The Internet is here to stay.]]></title>
   <link href="http://DMWoodall.github.com/blog/categories/ruby-/atom.xml" rel="self"/>
   <link href="http://DMWoodall.github.com/"/>
-  <updated>2012-06-18T11:03:01-05:00</updated>
+  <updated>2012-08-25T16:15:13-06:00</updated>
   <id>http://DMWoodall.github.com/</id>
   <author>
     <name><![CDATA[Dave Woodall]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[ruby strings]]></title>
     <link href="http://DMWoodall.github.com/blog/2012/06/11/ruby-strings/"/>
-    <updated>2012-06-11T16:18:00-05:00</updated>
+    <updated>2012-06-11T16:18:00-06:00</updated>
     <id>http://DMWoodall.github.com/blog/2012/06/11/ruby-strings</id>
     <content type="html"><![CDATA[<p>Spend some time on the ruby docs and you'll see how powerful they are.
 Strings can add white space

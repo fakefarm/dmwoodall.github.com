@@ -2,36 +2,56 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://DMWoodall.github.com/blog/2012/06/11/finally-on-the-octopress/</loc>
-        <lastmod>2012-06-11T12:09:03-05:00</lastmod>
+        <lastmod>2012-06-11T11:09:03-06:00</lastmod>
     </url>
     <url>
         <loc>http://DMWoodall.github.com/blog/2012/06/11/adding-a-code-block/</loc>
-        <lastmod>2012-06-11T11:28:19-05:00</lastmod>
+        <lastmod>2012-06-11T10:28:19-06:00</lastmod>
     </url>
     <url>
         <loc>http://DMWoodall.github.com/blog/2012/06/11/adding-images/</loc>
-        <lastmod>2012-06-11T12:22:01-05:00</lastmod>
+        <lastmod>2012-06-11T11:22:01-06:00</lastmod>
     </url>
     <url>
         <loc>http://DMWoodall.github.com/blog/2012/06/11/ruby-strings/</loc>
-        <lastmod>2012-06-11T16:20:53-05:00</lastmod>
+        <lastmod>2012-06-11T15:20:53-06:00</lastmod>
     </url>
     <url>
         <loc>http://DMWoodall.github.com/blog/2012/06/12/ruby-instance-variables/</loc>
-        <lastmod>2012-06-12T10:57:30-05:00</lastmod>
+        <lastmod>2012-06-12T09:57:30-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://DMWoodall.github.com/blog/2012/06/18/a-chance-at-a-grand-slam-with-a-guaranteed-single/
         </loc>
-        <lastmod>2012-06-18T10:53:59-05:00</lastmod>
+        <lastmod>2012-06-18T09:53:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://DMWoodall.github.com/blog/2012/07/11/notes-from-code-academy-dot-com/</loc>
+        <lastmod>2012-07-19T11:12:40-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://DMWoodall.github.com/blog/2012/07/19/up-in-the-treehouse/</loc>
+        <lastmod>2012-07-19T10:57:04-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://DMWoodall.github.com/blog/2012/07/19/html-forms/</loc>
+        <lastmod>2012-07-19T11:35:33-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://DMWoodall.github.com/blog/2012/07/20/css3-selectors/</loc>
+        <lastmod>2012-07-21T05:44:31-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://DMWoodall.github.com/blog/2012/08/25/hello-boulder/</loc>
+        <lastmod>2012-08-25T16:14:05-06:00</lastmod>
     </url>
     <url>
         <loc>http://DMWoodall.github.com/blog/archives/</loc>
-        <lastmod>2012-06-18T10:53:59-05:00</lastmod>
+        <lastmod>2012-08-25T16:14:05-06:00</lastmod>
     </url>
     <url>
         <loc>http://DMWoodall.github.com/</loc>
-        <lastmod>2012-06-18T10:53:59-05:00</lastmod>
+        <lastmod>2012-08-25T16:14:05-06:00</lastmod>
     </url>
 </urlset>

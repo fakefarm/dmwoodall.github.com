@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: journal | The Internet is here to stay.]]></title>
+  <link href="http://DMWoodall.github.com/blog/categories/journal/atom.xml" rel="self"/>
+  <link href="http://DMWoodall.github.com/"/>
+  <updated>2012-08-25T16:15:13-06:00</updated>
+  <id>http://DMWoodall.github.com/</id>
+  <author>
+    <name><![CDATA[Dave Woodall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[up in the treehouse]]></title>
+    <link href="http://DMWoodall.github.com/blog/2012/07/19/up-in-the-treehouse/"/>
+    <updated>2012-07-19T12:40:00-06:00</updated>
+    <id>http://DMWoodall.github.com/blog/2012/07/19/up-in-the-treehouse</id>
+    <content type="html"><![CDATA[<p>I just joined <a href="http://www.teamtreehouse.com">Team Treehouse</a>. It's one of the better online tutorial sites I've found. I really enjoy the badge system and the way they teach with progress in mind. They have a nice combination of videos, quizzes, and code challenges.</p>
+
+<p>Feel free to <a href="http://teamtreehouse.com/davewoodall">View my profile</a></p>
+]]></content>
+  </entry>
+  
+</feed>
