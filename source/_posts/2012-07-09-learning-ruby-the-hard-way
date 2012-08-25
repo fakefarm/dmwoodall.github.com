@@ -1,0 +1,55 @@
+---
+layout: post
+title: "why use ruby on rails"
+date: 2012-07-09 08:09
+comments: true
+categories: 
+published: false
+---
+
+Mike Gehard introduced me to Learn Ruby the Hard Way. I have been slowly working my way through it for the past seven, or eight months. 
+
+I enjoy Zed's approach in getting a very basic project to work. Then incorporating writing & reading files. 
+
+It's interesting how many different ways and approaches there are to learn the same thing. 
+
+Compare this appraoch to Peter Cooper where His first approach is to show us Classes and attribute accessors. 
+
+I'm finding that my preference for reading a book on code is one that is formatted with a majority of code needed to be written alongside. The brain tends to read over the very minute details, which actually matter in programming. By typing out code, you are required to pay attention to every character. 
+
+Exercise 22 says;
+_First, go back through every exercise you have done so far and write down every word and symbol (another name for ‘character’) that you have used. Make sure your list of symbols is complete._
+
+I really like that there is a break in the process. That now i have to go through and review what I have learned. I'm going to modify the instructions for this one slightly, and just write out the things that I didn't know, or have learned to do successfully due to this course
+
+###Things I have learned so far
+*Computer Text* 
+I became comfortable with inserting text that the computer needs. Things like "\n" for new line, or "\t" when tabbing in a line.
+
+*ARGV*
+This is a global array that allows you to pass arguments into your program.
+
+*$0*
+This is a mark of where you are in the program
+
+*STDIN*
+This is the way to accept arguments from the command line, and arguments from the user.
+
+*Reading And Writing Files*
+- File.open(filename)
+- close – Closes the file. Like File->Save.. in your editor.
+- read – Reads the contents of the file, you can assign the result to a variable. 
+- readline – Reads just one line of a text file.
+- truncate – Empties the file, watch out if you care about the file.
+- write(stuff) – Writes stuff to the file.
+
+*Method tips*
+- #seek
+- the Extra Credit in Exercise 21
+
+*Extra Credit Problems I want to do;*
+- Search online to see what other escape sequences are available.
+- Research the difference between require and include. How are they different?
+- Can you require a script that doesn’t contain a library specifically?
+- Figure out which directories on your system Ruby will look in to find the libraries you require.
+- If you open the file with ’w’ mode, then do you really need the target.truncate()? Go read the docs for Ruby’s File.open function and see if that’s true.
